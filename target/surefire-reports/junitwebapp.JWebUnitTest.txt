@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: junitwebapp.JWebUnitTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.671 s <<< FAILURE! - in junitwebapp.JWebUnitTest
+testLoginPage(junitwebapp.JWebUnitTest)  Time elapsed: 3.608 s  <<< ERROR!
+net.sourceforge.jwebunit.exception.TestingEngineResponseException: unexpected status code [403] at URL: [http://localhost:8081/junitwebapp/index.jsp]
+	at junitwebapp.JWebUnitTest.testLoginPage(JWebUnitTest.java:25)
+Caused by: com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: 403 Forbidden for http://localhost:8081/junitwebapp/index.jsp
+	at junitwebapp.JWebUnitTest.testLoginPage(JWebUnitTest.java:25)
+
+testHomePage(junitwebapp.JWebUnitTest)  Time elapsed: 0.045 s  <<< ERROR!
+net.sourceforge.jwebunit.exception.TestingEngineResponseException: unexpected status code [403] at URL: [http://localhost:8081/junitwebapp/home.jsp]
+	at junitwebapp.JWebUnitTest.testHomePage(JWebUnitTest.java:34)
+Caused by: com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: 403 Forbidden for http://localhost:8081/junitwebapp/home.jsp
+	at junitwebapp.JWebUnitTest.testHomePage(JWebUnitTest.java:34)
+
